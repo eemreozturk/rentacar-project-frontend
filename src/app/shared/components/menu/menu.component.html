@@ -1,0 +1,9 @@
+<div class="list-group">
+    <button *ngFor="let item of items" type="button" 
+    [routerLink]="item.routerLink" routerLinkActive="active" 
+    (click)="onItemClick($event ,item)"
+    class="list-group-item list-group-item-action">
+      {{item.label}}
+    </button>
+    
+  </div>
